@@ -5,7 +5,7 @@
            xmlns:ov="http://schemas.microsoft.com/office/taskpaneappversionoverrides" 
            xsi:type="TaskPaneApp">
   <Id>05c2e1c9-3e1d-406e-9a91-e9ac64854143</Id>
-  <Version>1.0.0.0</Version>
+  <Version>1.0.0.2</Version>
   <ProviderName>github</ProviderName>
   <DefaultLocale>en-US</DefaultLocale>
   <DisplayName DefaultValue="Active Cell Add-in"/>
@@ -80,12 +80,12 @@
         <bt:Url id="Taskpane.Url" DefaultValue="https://komt0.github.io/Active_Cell_Excel/taskpane.html" />
       </bt:Urls>
       <bt:ShortStrings>
-        <bt:String id="GetStarted.Title" DefaultValue="Get started with your sample add-in!" />
+        <bt:String id="GetStarted.Title" DefaultValue="Get started with the add-in!" />
         <bt:String id="CommandsGroup.Label" DefaultValue="Komt0 1" />
         <bt:String id="TaskpaneButton.Label" DefaultValue="Active Cell" />
       </bt:ShortStrings>
       <bt:LongStrings>
-        <bt:String id="GetStarted.Description" DefaultValue="Your sample add-in loaded successfully. Go to the HOME tab and click the 'Show Taskpane' button to get started." />
+        <bt:String id="GetStarted.Description" DefaultValue="The add-in loaded successfully. Go to the HOME tab and click the add-in to button to get started." />
         <bt:String id="TaskpaneButton.Tooltip" DefaultValue="Click to Show a Taskpane" />
       </bt:LongStrings>
     </Resources>
