@@ -1,7 +1,7 @@
 <div align="center">
   <img src="assets/icon-80.png" alt="Active Cell Tracker Logo" width="80" height="80">
   <h1>Active Cell Tracker for Excel</h1>
-  <p><strong>A lightweight and easy Office Add-in to dynamically track and export active cell coordinates in real-time.</strong></p>
+  <p><strong>A lightweight and powerful Office Add-in to dynamically track, capture, and export active cell data in real-time.</strong></p>
 
   <p>
     <a href="https://github.com/komt0/Active_Cell_Excel/blob/main/LICENSE">
@@ -20,15 +20,22 @@
 
 ## Features
 
-*  **Real-time Tracking:** Automatically detects active cell selection changes across your sheet.
-*  **Custom Destination:** Set a specific target cell like `D4` or `Sheet2!A1`, where coordinates are sent instantly.
-*  **Flexible Output Options:** Toggle whether to include the sheet name (e.g., `Sheet1!D4` vs. `D4`).
-*  **Persistent Settings:** Stores your target preferences locally using `localStorage`.
-*  **Cloud Hosted:** Fully deployed via GitHub Pages over secure HTTPS.
+ **Real-time Tracking:** Automatically detects active cell selection changes across your worksheets.
+* **Multiple Export Modes:** Choose what to export to your destination cell:
+  * **Cell Address** (e.g., `D4`)
+  * **Cell Value** (Content/Text)
+  * **Cell Formula**
+  * **Combined Value & Address** (e.g., `$1000 / D4`)
+* **Target Sheet & Cell Selection:** Select any specific worksheet and target cell (e.g., `Sheet2!V1436`) to receive output.
+* **Jump to Target Cell:** Quickly navigate and focus directly on your defined target cell with a single click.
+* **Play / Pause Control:** Toggle cell tracking on or off anytime without closing the add-in panel.
+* **Auto-Copy to Clipboard:** Automatically copy captured cell coordinates or data straight to your OS clipboard.
+* **Live Activity Card:** View the last registered cell value along with an exact timestamp.
+* **Persistent Settings:** Saves all your custom preferences locally via `localStorage`.
 
 ---
 
-##  How to Install / Sideload
+## How to Install / Sideload
 
 To use this add-in in **Excel for Web**:
 
@@ -40,7 +47,7 @@ To use this add-in in **Excel for Web**:
 
 ---
 
-##  Built With
+## Built With
 
 * [Office.js API](https://learn.microsoft.com/en-us/office/dev/add-ins/) - Official JavaScript API for Microsoft Office Add-ins.
 * [Node.js](https://nodejs.org/) & [Webpack](https://webpack.js.org/) - Module bundler and build process.
