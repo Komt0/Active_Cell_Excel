@@ -1,3 +1,189 @@
-/*! For license information please see taskpane.js.LICENSE.txt */
-!function(){function e(){var n,r,o="function"==typeof Symbol?Symbol:{},a=o.iterator||"@@iterator",c=o.toStringTag||"@@toStringTag";function u(e,o,a,c){var u=o&&o.prototype instanceof l?o:l,s=Object.create(u.prototype);return t(s,"_invoke",function(e,t,o){var a,c,u,l=0,s=o||[],f=!1,d={p:0,n:0,v:n,a:p,f:p.bind(n,4),d:function(e,t){return a=e,c=0,u=n,d.n=t,i}};function p(e,t){for(c=e,u=t,r=0;!f&&l&&!o&&r<s.length;r++){var o,a=s[r],p=d.p,m=a[2];e>3?(o=m===t)&&(u=a[(c=a[4])?5:(c=3,3)],a[4]=a[5]=n):a[0]<=p&&((o=e<2&&p<a[1])?(c=0,d.v=t,d.n=a[1]):p<m&&(o=e<3||a[0]>t||t>m)&&(a[4]=e,a[5]=t,d.n=m,c=0))}if(o||e>1)return i;throw f=!0,t}return function(o,s,m){if(l>1)throw TypeError("Generator is already running");for(f&&1===s&&p(s,m),c=s,u=m;(r=c<2?n:u)||!f;){a||(c?c<3?(c>1&&(d.n=-1),p(c,u)):d.n=u:d.v=u);try{if(l=2,a){if(c||(o="next"),r=a[o]){if(!(r=r.call(a,u)))throw TypeError("iterator result is not an object");if(!r.done)return r;u=r.value,c<2&&(c=0)}else 1===c&&(r=a.return)&&r.call(a),c<2&&(u=TypeError("The iterator does not provide a '"+o+"' method"),c=1);a=n}else if((r=(f=d.n<0)?u:e.call(t,d))!==i)break}catch(e){a=n,c=1,u=e}finally{l=1}}return{value:r,done:f}}}(e,a,c),!0),s}var i={};function l(){}function s(){}function f(){}r=Object.getPrototypeOf;var d=[][a]?r(r([][a]())):(t(r={},a,function(){return this}),r),p=f.prototype=l.prototype=Object.create(d);function m(e){return Object.setPrototypeOf?Object.setPrototypeOf(e,f):(e.__proto__=f,t(e,c,"GeneratorFunction")),e.prototype=Object.create(p),e}return s.prototype=f,t(p,"constructor",f),t(f,"constructor",s),s.displayName="GeneratorFunction",t(f,c,"GeneratorFunction"),t(p),t(p,c,"Generator"),t(p,a,function(){return this}),t(p,"toString",function(){return"[object Generator]"}),(e=function(){return{w:u,m:m}})()}function t(e,n,r,o){var a=Object.defineProperty;try{a({},"",{})}catch(e){a=0}t=function(e,n,r,o){function c(n,r){t(e,n,function(e){return this._invoke(n,r,e)})}n?a?a(e,n,{value:r,enumerable:!o,configurable:!o,writable:!o}):e[n]=r:(c("next",0),c("throw",1),c("return",2))},t(e,n,r,o)}function n(e,t,n,r,o,a,c){try{var u=e[a](c),i=u.value}catch(e){return void n(e)}u.done?t(i):Promise.resolve(i).then(r,o)}function r(e){return function(){var t=this,r=arguments;return new Promise(function(o,a){var c=e.apply(t,r);function u(e){n(c,o,a,u,i,"next",e)}function i(e){n(c,o,a,u,i,"throw",e)}u(void 0)})}}var o=localStorage.getItem("targetExcelCell")||"V1436",a=localStorage.getItem("targetExcelSheet")||"",c="true"===localStorage.getItem("includeSheetName"),u=localStorage.getItem("captureMode")||"address",i="true"===localStorage.getItem("autoCopyClipboard"),l=!0;function s(){return f.apply(this,arguments)}function f(){return f=r(e().m(function t(){return e().w(function(t){for(;;)switch(t.n){case 0:return t.n=1,Excel.run(function(){var t=r(e().m(function t(n){var r,o,c;return e().w(function(e){for(;;)switch(e.n){case 0:return(r=n.workbook.worksheets).load("items/name"),e.n=1,n.sync();case 1:if(o=document.getElementById("sheetSelect")){e.n=2;break}return e.a(2);case 2:c=o.value||a,o.innerHTML="",r.items.forEach(function(e){var t=document.createElement("option");t.value=e.name,t.textContent=e.name,e.name===c&&(t.selected=!0),o.appendChild(t)}),!a&&r.items.length>0&&(a=r.items[0].name);case 3:return e.a(2)}},t)}));return function(e){return t.apply(this,arguments)}}());case 1:return t.a(2)}},t)})),f.apply(this,arguments)}function d(){return p.apply(this,arguments)}function p(){return p=r(e().m(function t(){return e().w(function(t){for(;;)switch(t.n){case 0:return t.n=1,Excel.run(function(){var t=r(e().m(function t(n){var r,c;return e().w(function(e){for(;;)switch(e.n){case 0:if(!a||!o){e.n=1;break}return r=n.workbook.worksheets.getItem(a),c=r.getRange(o),r.activate(),c.select(),e.n=1,n.sync();case 1:return e.a(2)}},t)}));return function(e){return t.apply(this,arguments)}}());case 1:return t.a(2)}},t)})),p.apply(this,arguments)}function m(){return m=r(e().m(function t(){return e().w(function(t){for(;;)switch(t.n){case 0:return t.n=1,Excel.run(function(){var t=r(e().m(function t(n){return e().w(function(e){for(;;)switch(e.n){case 0:return n.workbook.worksheets.onSelectionChanged.add(g),n.workbook.worksheets.onActivated.add(s),e.n=1,n.sync();case 1:return e.a(2)}},t)}));return function(e){return t.apply(this,arguments)}}());case 1:return t.a(2)}},t)})),m.apply(this,arguments)}function g(e){return y.apply(this,arguments)}function y(){return y=r(e().m(function t(n){return e().w(function(t){for(;;)switch(t.n){case 0:if(l){t.n=1;break}return t.a(2);case 1:return t.n=2,Excel.run(function(){var t=r(e().m(function t(n){var r,l,s,f,d,p,m;return e().w(function(e){for(;;)switch(e.p=e.n){case 0:return(r=n.workbook.getActiveCell()).load(["address","values","formulas","text"]),e.n=1,n.sync();case 1:if(l=r.address,!c&&l.includes("!")&&(l=l.split("!").pop()),s=r.text[0][0]||r.values[0][0]||"(empty)",f="",f="value"===u?s:"formula"===u?r.formulas[0][0]:"both"===u?"".concat(s," / ").concat(l):l,!i||!f){e.n=5;break}return e.p=2,e.n=3,navigator.clipboard.writeText(String(f));case 3:e.n=5;break;case 4:e.p=4,m=e.v,console.log("Clipboard error:",m);case 5:if(!a){e.n=7;break}return n.workbook.worksheets.getItem(a).getRange(o).values=[[f]],e.n=6,n.sync();case 6:d=document.getElementById("lastLoggedValue"),p=document.getElementById("lastLoggedTime"),d&&(d.innerText=f),p&&(p.innerText="At ".concat((new Date).toLocaleTimeString()));case 7:return e.a(2)}},t,null,[[2,4]])}));return function(e){return t.apply(this,arguments)}}());case 2:return t.a(2)}},t)})),y.apply(this,arguments)}Office.onReady(function(e){if(e.host===Office.HostType.Excel){Office.addin.setStartupBehavior(Office.StartupBehavior.load);var t=document.getElementById("targetCellInput"),n=document.getElementById("includeSheetName"),r=document.getElementById("captureModeSelect"),f=document.getElementById("autoCopyClipboard"),p=document.getElementById("saveCellBtn"),g=document.getElementById("toggleTrackingBtn"),y=document.getElementById("goToTargetBtn"),h=document.getElementById("statusMessage");t&&(t.value=o),n&&(n.checked=c),r&&(r.value=u),f&&(f.checked=i),s(),g&&(g.onclick=function(){(l=!l)?(g.innerText="⏸️ Pause Tracking",g.style.backgroundColor="#0f7b41"):(g.innerText="▶️ Resume Tracking",g.style.backgroundColor="#d9381e")}),y&&(y.onclick=d),p&&(p.onclick=function(){var e=t.value.trim(),l=document.getElementById("sheetSelect").value;e&&l&&(o=e,a=l,c=n.checked,u=r.value,i=f.checked,localStorage.setItem("targetExcelCell",e),localStorage.setItem("targetExcelSheet",l),localStorage.setItem("includeSheetName",c),localStorage.setItem("captureMode",u),localStorage.setItem("autoCopyClipboard",i),h.innerText="✓ Settings saved successfully",setTimeout(function(){h.innerText=""},3e3))}),function(){m.apply(this,arguments)}()}})}();
-//# sourceMappingURL=taskpane.js.map
+/* global Office, Excel */
+
+// Configuraciones guardadas
+let targetCellAddress = localStorage.getItem("targetExcelCell") || "V1436";
+let targetSheetName = localStorage.getItem("targetExcelSheet") || "";
+let includeSheet = localStorage.getItem("includeSheetName") === "true";
+let captureMode = localStorage.getItem("captureMode") || "address";
+let autoCopy = localStorage.getItem("autoCopyClipboard") === "true";
+
+// Estado interno
+let isTrackingActive = true;
+
+Office.onReady((info) => {
+  if (info.host === Office.HostType.Excel) {
+    Office.addin.setStartupBehavior(Office.StartupBehavior.load);
+
+    const input = document.getElementById("targetCellInput");
+    const checkbox = document.getElementById("includeSheetName");
+    const captureSelect = document.getElementById("captureModeSelect");
+    const autoCopyBox = document.getElementById("autoCopyClipboard");
+    const button = document.getElementById("saveCellBtn");
+    const toggleBtn = document.getElementById("toggleTrackingBtn");
+    const goToBtn = document.getElementById("goToTargetBtn");
+    const status = document.getElementById("statusMessage");
+
+    if (input) input.value = targetCellAddress;
+    if (checkbox) checkbox.checked = includeSheet;
+    if (captureSelect) captureSelect.value = captureMode;
+    if (autoCopyBox) autoCopyBox.checked = autoCopy;
+
+    loadWorksheetsList();
+
+    // Toggle Play / Pausa
+    if (toggleBtn) {
+      toggleBtn.onclick = () => {
+        isTrackingActive = !isTrackingActive;
+        if (isTrackingActive) {
+          toggleBtn.innerText = "Pause Tracking";
+          toggleBtn.style.backgroundColor = "#0f7b41";
+        } else {
+          toggleBtn.innerText = "Resume Tracking";
+          toggleBtn.style.backgroundColor = "#d9381e";
+        }
+      };
+    }
+
+    // Ir a la Celda Destino
+    if (goToBtn) {
+      goToBtn.onclick = goToTargetCell;
+    }
+
+    // Botón Guardar
+    if (button) {
+      button.onclick = () => {
+        const newValue = input.value.trim();
+        const selectedSheet = document.getElementById("sheetSelect").value;
+
+        if (newValue && selectedSheet) {
+          targetCellAddress = newValue;
+          targetSheetName = selectedSheet;
+          includeSheet = checkbox.checked;
+          captureMode = captureSelect.value;
+          autoCopy = autoCopyBox.checked;
+
+          localStorage.setItem("targetExcelCell", newValue);
+          localStorage.setItem("targetExcelSheet", selectedSheet);
+          localStorage.setItem("includeSheetName", includeSheet);
+          localStorage.setItem("captureMode", captureMode);
+          localStorage.setItem("autoCopyClipboard", autoCopy);
+
+          status.innerText = `✓ Settings saved successfully`;
+          setTimeout(() => { status.innerText = ""; }, 3000);
+        }
+      };
+    }
+
+    // Registrar escuchador GLOBAL para todo el libro
+    registerGlobalSelectionChangeListener();
+  }
+});
+
+async function loadWorksheetsList() {
+  await Excel.run(async (context) => {
+    const sheets = context.workbook.worksheets;
+    sheets.load("items/name");
+    await context.sync();
+
+    const sheetSelect = document.getElementById("sheetSelect");
+    if (!sheetSelect) return;
+
+    const currentSelection = sheetSelect.value || targetSheetName;
+    sheetSelect.innerHTML = "";
+
+    sheets.items.forEach((sheet) => {
+      const option = document.createElement("option");
+      option.value = sheet.name;
+      option.textContent = sheet.name;
+      if (sheet.name === currentSelection) option.selected = true;
+      sheetSelect.appendChild(option);
+    });
+
+    if (!targetSheetName && sheets.items.length > 0) {
+      targetSheetName = sheets.items[0].name;
+    }
+  });
+}
+
+async function goToTargetCell() {
+  await Excel.run(async (context) => {
+    if (targetSheetName && targetCellAddress) {
+      const specificSheet = context.workbook.worksheets.getItem(targetSheetName);
+      const targetRange = specificSheet.getRange(targetCellAddress);
+      
+      specificSheet.activate();
+      targetRange.select();
+      await context.sync();
+    }
+  });
+}
+
+// 🌟 SOLUCIÓN: Registrar el evento a nivel del libro completo (worksheets collection)
+async function registerGlobalSelectionChangeListener() {
+  await Excel.run(async (context) => {
+    // Escuchar el cambio de selección GLOBAL en CUALQUIER hoja del libro
+    context.workbook.worksheets.onSelectionChanged.add(onSelectionChangeHandler);
+    
+    // También actualizamos la lista de hojas si el usuario añade o activa pestañas
+    context.workbook.worksheets.onActivated.add(loadWorksheetsList);
+    
+    await context.sync();
+  });
+}
+
+async function onSelectionChangeHandler(args) {
+  if (!isTrackingActive) return;
+
+  await Excel.run(async (context) => {
+    // getActiveCell() siempre devuelve la celda activa sin importar en qué hoja esté
+    const activeCell = context.workbook.getActiveCell();
+    activeCell.load(["address", "values", "formulas", "text"]);
+    await context.sync();
+
+    // 1. Obtener dirección formateada
+    let cellAddr = activeCell.address;
+    if (!includeSheet && cellAddr.includes("!")) {
+      cellAddr = cellAddr.split("!").pop();
+    }
+
+    // 2. Obtener valor visible
+    const cellValue = activeCell.text[0][0] || activeCell.values[0][0] || "(empty)";
+
+    // 3. Evaluar qué tipo de dato exportar
+    let outputValue = "";
+
+    if (captureMode === "value") {
+      outputValue = cellValue;
+    } else if (captureMode === "formula") {
+      outputValue = activeCell.formulas[0][0];
+    } else if (captureMode === "both") {
+      outputValue = `${cellValue} / ${cellAddr}`;
+    } else {
+      outputValue = cellAddr;
+    }
+
+    // 📋 Copiar al Portapapeles si está activo
+    if (autoCopy && outputValue) {
+      try {
+        await navigator.clipboard.writeText(String(outputValue));
+      } catch (e) {
+        console.log("Clipboard error:", e);
+      }
+    }
+
+    // Escribir en la celda de destino seleccionada
+    if (targetSheetName) {
+      const specificSheet = context.workbook.worksheets.getItem(targetSheetName);
+      const targetRange = specificSheet.getRange(targetCellAddress);
+      
+      targetRange.values = [[outputValue]];
+      await context.sync();
+
+      // 🕒 Actualizar interfaz
+      const lastValElem = document.getElementById("lastLoggedValue");
+      const lastTimeElem = document.getElementById("lastLoggedTime");
+      if (lastValElem) lastValElem.innerText = outputValue;
+      if (lastTimeElem) lastTimeElem.innerText = `At ${new Date().toLocaleTimeString()}`;
+    }
+  });
+}
